@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { Download, ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { personalDetails } from '../data';
+import profile from "../assets/profile.png";
 
 const Hero = () => {
     return (
@@ -79,9 +80,11 @@ const Hero = () => {
                         <div className="absolute top-0 -right-4 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
                         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
+
+
                         <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl shadow-accent/20 animate-float">
                             <img
-                                src="/src/assets/profile.png"
+                                src={profile}
                                 alt="Mohamed Irfan"
                                 className="w-full h-full object-cover"
                             />
